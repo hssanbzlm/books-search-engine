@@ -19,8 +19,10 @@ export class SearchComponent implements OnInit {
   } 
 
   onClick()
-  {   if(this.key)
+  {   if(this.key && this.key.trim())
+    { console.log()
     this.router.navigateByUrl("result/"+this.key);
+  }
      else 
      return 0;
   

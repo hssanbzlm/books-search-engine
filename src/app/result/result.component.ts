@@ -5,6 +5,7 @@ import { Book } from '../book';
 import { map } from 'rxjs/operators';
 import { GoogleVolumeListResponse } from '../google-volume-list-response';
 
+
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',

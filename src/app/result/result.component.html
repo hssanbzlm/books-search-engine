@@ -1,6 +1,6 @@
 <body>
 <div class="progressSpinner"  >
-<mat-progress-spinner *ngIf="filterBooks.length==0 && searched==false ; else goThereone" 
+<mat-progress-spinner style="margin-left: 45%;margin-top: 20%;" *ngIf="filterBooks.length==0 && searched==false ; else goThereone" 
         class="example-margin"
         [color]="color"
         [mode]="mode"
@@ -58,8 +58,9 @@
 </div>  
 
 <ng-template #goTheretwo> 
-  <div class="alert alert-danger" role="alert" >
-    aucun élement ne correspond à votre recherche
+  <div style="width: 50%;margin-left: 25%;" class="alert alert-danger" role="alert" > 
+     
+we couldn't find any book for this filter :(
   </div>
 
 </ng-template>

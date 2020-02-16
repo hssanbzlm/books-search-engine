@@ -4,9 +4,9 @@ const path = require('path');
 const app = express();
  
 
-app.use(express.static(__dirname + '/dist/book-search'));
+app.use(express.static(__dirname + './dist/book-search'));
  
-app.get('*', function(req,res) {
+app.get('/*', function(req,res) {
   res.sendFile(path.join(__dirname + '/dist/book-search/index.html'));
 });
 app.listen(process.env.PORT || 8080);
